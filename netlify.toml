@@ -1,11 +1,12 @@
 [build]
-  publish = "."  # This is the root directory where your HTML file is located
-  command = "npm install && npm run build"  # Adjust the command if you have a different build step
+  publish = "."  # The root directory where your HTML file is located
+  command = "npm install && npm run build"
 
 [build.environment]
   NODE_ENV = "production"
 
 [[redirects]]
   from = "/*"
-  to = "/index.html"
+  to = "/upload.html"
   status = 200
+
